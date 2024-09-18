@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=New+Amsterdam&family=Oswald:wght@200..700&display=swap');
+.tq {
+    font-size: 8px;
+    margin-left: 5px;
+    margin-top: -2px;
+}
+
+.box1 {
+    width: 160px;
+    height: 100px;
+    background-color: rgb(248, 234, 215);
+    margin: 10px auto;
+}
+.box2 { 
+    width: 65px;
+    height: 65px;
+    background-color:rgb(255, 216, 169);
+    margin: -81px 30px 10px 255px;
+    position: static;
+    font-size: 5px;
+    color: black;
+    
+}
+.relative {
+    position: relative;
+}
+.text{
+    font-size: 5px;
+    color: black;
+    float: left;
+    margin-left: 5px;
+}
+.gambar {
+    width: 9px;
+    height: auto;
+    position: relatives;
+    margin-left: 3px;
+}
+.pesanan {
+    font-size: 4px;
+    margin-left: 14px;
+    margin-top: -13px;
+}
+.desk {
+    font-size: 3px;
+    margin-left: 14px;
+}
+.judul {
+    font-family: "Oswald", sans-serif;
+    margin-top: -96px;
+    font-size: 10px;
+}
+.harga {
+    font-size: 3px;
+    margin-left: 49px;
+    margin-top: -3px;
+}
+.logo {
+    width: 30px;
+    height: auto;
+    position: relatives;
+    margin-top: 78px;
+    margin-left: 6px;
+}
+.deskripsi {
+    font-size: 3px;
+    margin-left: 6px;
+    margin-top: 1px;
+}
+.nama {
+    font-size: 4px;
+    margin-left: 6px;
+    margin-top: 5px;
+}
+.hargatotal {
+    font-size: 3px;
+    margin-left: 49px;
+    margin-top: -13px;
+}
+.total {
+    font-size: 3px;
+    margin-left: 3px;
+    margin-top: 10px;
+}
+hr {
+    border: 0;
+    height: 1px;
+    background-color: black;
+    width: 100%;
+    margin-left: -1px;
+}
