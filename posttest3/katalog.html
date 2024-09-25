@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Katalog Skincare</title>
+    <link rel="stylesheet" href="katalog.css">
+</head>
+<body>
+    <header>
+        <img src="cover.jpg" alt="skincare" class="cover">
+        <h1 class="skinhaven">SkinHaven</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#beranda">Beranda</a></li>
+            <li><a href="#tentangsaya">Tentang Saya</a></li>
+        </ul>
+    </nav>
+
+    <main id="beranda">
+        <h2>Produk</h2>
+        <div class="kotak">
+            <div class="produk">
+                <img src="serum.jpeg" alt="Produk serum">
+                <p><br></p>
+                <h3>Serum</h3>
+                <p><br></p>
+                <button onclick="showPopup('Serum')">Detail</button>
+            </div>
+            <div class="produk">
+                <img src="moisturizer.jpg" alt="Produk moisturizer">
+                <p><br></p>
+                <h3>Moisturizer</h3>
+                <p><br></p>
+                <button onclick="showPopup('Moisturizer')">Detail</button>
+            </div>
+            <div class="produk">
+                <img src="Toner.jpg" alt="Produk toner">
+                <p><br></p>
+                <h3>Toner</h3>
+                <p><br></p>
+                <button onclick="showPopup('Toner')">Detail</button>
+            </div>
+            <div class="produk">
+                <img src="sunscreen.jpg" alt="Produk sunscreen">
+                <p><br></p>
+                <h3>Sunscreen</h3>
+                <p><br></p>
+                <button onclick="showPopup('Sunscreen')">Detail</button>
+            </div>
+            <div class="produk">
+                <img src="facialwash.avif" alt="Produk facial wash">
+                <p><br></p>
+                <h3>Facial Wash</h3>
+                <p><br></p>
+                <button onclick="showPopup('FacialWash')">Detail</button>
+            </div>
+        </div>
+    </main>
+
+    <section id="tentangsaya">
+        <h2>Tentang Saya</h2>
+        <p><br>Halo! Saya pecinta skincare yang ingin membantu orang menemukan produk terbaik buat kulit mereka. Dengan pengalaman di dunia kecantikan, saya senang sekali bisa berbagi tips, pengetahuan, dan rekomendasi produk yang efektif dan aman untuk kamu coba.</p>
+        <p><br>Nama : Octavia Ramadhani</p>
+        <p>NIM : 2309106064</p>
+        <P>IG : viarmdhnii</P>
+        <p>Email : via@gmail.com</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 SkinHaven</p>
+    </footer>
+
+    <div class="popup" id="popup">
+        <h3 id="popupTitle"></h3>
+        <p><br></p>
+        <p id="popupContent"></p>
+        <p><br></p>
+        <button onclick="closePopup()">Tutup</button>
+    </div>
+
+    <div class="overlay" id="overlay"></div>
+
+    <script src="katalog.js"></script>
+</body>
+</html>
