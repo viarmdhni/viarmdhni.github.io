@@ -1,0 +1,293 @@
+* {
+    margin: 0;
+    padding: 0 1px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&display=swap');
+
+body {
+    font-family: "Bodoni Moda", serif;
+    background-color: hsl(0, 100%, 96%);
+    color: #333;
+    line-height: 1.5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+header {
+    background-color: hsl(0, 71%, 92%);
+    position: relative;
+    width: 100%;
+}
+
+.skinhaven {
+    font-family: "Bodoni Moda", serif;
+    position:absolute;
+    top: 22%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size:xxx-large;
+    color: #ffffff;
+    text-shadow:
+    2px 2px 2px #835f5f ;
+}
+
+.cover {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-top: -25px;
+    margin-left: 0px;
+    filter: brightness(85%);
+}
+
+nav {
+    background-color: hsl(0, 51%, 86%);
+    padding: 13px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    box-shadow: 1px 1px rgba(0, 0, 0, 0.15);
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: medium;
+    text-shadow:
+    1px 1px 1px rgb(218, 162, 162);
+    text-align: center;
+}
+
+nav ul li a:hover {
+    color: rgb(151, 113, 113);
+}
+
+main {
+    padding: 75px 20px 40px;
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+}
+
+.kotak {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+}
+
+.produk {
+    border: 1px solid #e3b8b8;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    background-color: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.produk img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.produk h3 {
+    margin: 15px 0 10px;
+    font-size: 20px;
+}
+
+.produk button {
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 15px;
+    transition: background-color 0.1s ease;
+}
+
+.produk button:hover {
+    background-color: #218838;
+}
+
+form {
+    max-width: 600px;
+    margin: 100px auto 0px;
+    background-color: #ffffff;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+    display: block;
+    margin: 15px 3px;
+    font-weight: bold;
+    font-size: 15px;
+    text-align: left;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="number"],
+form select,
+form textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 13px;
+}
+
+form input[type="range"] {
+    width: 100%;
+    margin: 10px 0;
+}
+
+form input[type="submit"] {
+    margin-top: 20px;
+    padding: 12px 25px;
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 15px;
+    transition: background-color 0.1s ease;
+}
+
+form input[type="submit"]:hover {
+    background-color: #0069d9;
+}
+
+.back-button {
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1em;
+    margin: 35px 5px 10px;
+    transition: background-color 0.1s ease, transform 0.1s ease; /* Tambahkan transisi untuk efek hover */
+    background-color: hsl(0, 60%, 80%);
+    color: #ffffff;
+    box-shadow: 0 3px 3px rgba(0, 123, 255, 0.2);
+}
+
+.back-button:hover {
+    background-color: hsl(0, 60%, 70%);
+}
+
+#tentangsaya {
+    background-color: hsl(0, 51%, 86%);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#tentangsaya h2 {
+    margin-bottom: 15px;
+}
+
+#tentangsaya p {
+    margin-bottom: 5px;
+    font-size: 15px;
+}
+
+footer {
+    background-color: #f8e1e4;
+    text-align: center;
+    padding: 0.5%;  
+    width: 100%;
+    bottom: 0;
+    position: fixed;
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 40px;
+    border-radius: 10px;
+    z-index: 1000;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    max-width: 400px;
+}
+
+.popup h3 {
+    margin-top: 0;
+}
+
+.popup p {
+    margin: 15px 0;
+}
+
+.popup button {
+    padding: 10px 20px;
+    background-color: #dc3545;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.1s ease;
+}
+
+.popup button:hover {
+    background-color: #c82333;
+}
+
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(55, 47, 47, 0.5);
+    z-index: 999;
+}
+
+.review {
+    max-width: 1000px;
+    margin: 10px auto 100px;
+    background-color: #ffffff;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+}
+
+.review p {
+    text-align: left;
+    font-size: 15px;
+}
+
+@media (max-width: 768px) {
+    .kotak {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+
+    form {
+        width: 90%;
+    }
+
+    .back-button, .view-all-button {
+        width: 100%;
+    }
+}
