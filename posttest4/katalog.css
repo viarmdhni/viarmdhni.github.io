@@ -183,7 +183,7 @@ form input[type="submit"]:hover {
     cursor: pointer;
     font-size: 1.1em;
     margin: 35px 5px 10px;
-    transition: background-color 0.1s ease, transform 0.1s ease; /* Tambahkan transisi untuk efek hover */
+    transition: background-color 0.1s ease, transform 0.1s ease; 
     background-color: hsl(0, 60%, 80%);
     color: #ffffff;
     box-shadow: 0 3px 3px rgba(0, 123, 255, 0.2);
