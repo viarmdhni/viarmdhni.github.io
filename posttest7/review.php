@@ -1,10 +1,10 @@
 <?php
 require 'db_connect.php';
+
 if (session_status() === PHP_SESSION_NONE) {
     session_start();
 }
 
-// Redirect if not logged in
 if (!isset($_SESSION['id_user'])) {
     header("Location: login.php");
     exit();
@@ -14,16 +14,12 @@ function is_admin() {
     return isset($_SESSION['role']) && $_SESSION['role'] === 'admin';
 }
 
-// Prepare base query depending on user role
 if (is_admin()) {
-    // Admin can see all reviews
     $base_query = "SELECT * FROM reviews";
 } else {
-    // Regular users can only see their own reviews
     $base_query = "SELECT * FROM reviews WHERE id_user = ?";
 }
 
-// Handle search functionality
 if (isset($_GET['query'])) {
     if (is_admin()) {
         $stmt = $db_connect->prepare($base_query . " WHERE produk LIKE ? ORDER BY created_at DESC");
